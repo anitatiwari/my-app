@@ -1,0 +1,29 @@
+<div class="type">
+  <p class="type-tri">    This is a <span id="type">{{type}}</span>
+    
+
+    
+    Triangle
+   
+  </p>
+</div>
+
+<form class="add-form md:shadow-xl grid grid-cols-3 justify-items-center m-8">
+
+  <div  class="unit flex flex-col-reverse m-3">
+    <label for="side1" class="font-semibold text-xl text-purple-700">Side A</label> <input required type="number" name="num1" id="side1"  placeholder="50">
+  </div>
+  <div class="unit  flex flex-col-reverse m-3"> 
+    <label for="side2" class="font-semibold text-purple-700 text-xl ">Side B</label><input required type="number" name="num2"  id="side2" placeholder="50">
+    
+  </div>
+  <div class="uni  flex flex-col-reverse m-3 "> 
+    <label for="side3" class="font-semibold text-purple-700 text-xl ">Side C</label><input required type="number" name="num3" id="side3" placeholder="50">
+  </div>
+ 
+
+</form>
+<app-button class="mt-12" color="green" text="Add" (click)="DoMath()">
+
+</app-button>
+

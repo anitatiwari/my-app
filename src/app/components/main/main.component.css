@@ -1,0 +1,29 @@
+/* form{
+    
+    display: flex;
+  
+   justify-content: center;
+   align-items: center;
+} */
+input{
+    width: 100px;
+ border: 1px ;
+ border-radius: 10%;
+    /* background-color: rgb(39, 39, 39); */
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: 500;
+    margin: 3em 3em 0 3em;
+    border: 1px solid;
+    padding: 1em;
+}
+
+.type-tri{
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#type{
+    font-weight: 500;
+    color: rgb(101, 62, 116);
+   
+}

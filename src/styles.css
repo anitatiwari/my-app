@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    color: rgb(29, 28, 28);
+    /* background-color: rgba(238, 238, 238, 0.92); */
+    display: block;
+text-align: center;
+align-content: center;
+}

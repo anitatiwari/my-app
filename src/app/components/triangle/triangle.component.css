@@ -1,0 +1,50 @@
+/* .arrow-up {
+    width: 0rem; 
+    height: 0rem; 
+    border-left: 10em solid transparent;
+    border-right: 20em solid transparent ;
+    
+    border-bottom: 17rem solid ;
+    display: block;
+ margin: auto;
+  }
+  .arrow-up2 {
+    width: 0rem; 
+    height: 0rem; 
+    border-left: 9em solid transparent;
+    border-right: 20em solid transparent ;
+    
+    border-bottom: 17rem solid rgb(149, 32, 32) ;
+    display: block;
+ margin: auto;
+ position:absolute;
+ top: 1.4em;
+ left:7em;
+  } */
+  .A{
+     position: absolute;
+     top: 29rem;
+     left: 30;
+  }
+  .B{
+   position: absolute;
+   top: 20rem;
+   left: 35rem;
+}
+.C{
+   position: absolute;
+   top: 20rem;
+   left: 50rem;
+}
+#tri{
+   stroke-dasharray: 7000;
+    stroke-dashoffset: 7000;
+    animation: dash 6s linear forwards;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+ 
