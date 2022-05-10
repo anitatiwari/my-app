@@ -10,8 +10,12 @@ export class MainComponent implements OnInit {
   @Input() s1: number;
   @Input() s2: number;
   @Input() s3: number;
+  
   @Output() result = new EventEmitter();
   type = 'Equilateral';
+  unit= "cm"
+  displayStyle = "none";
+  reason: string="any"
 
   ngOnInit(): void {}
   DoMath() {
@@ -19,9 +23,11 @@ export class MainComponent implements OnInit {
     this.s2 = parseFloat(globalThis.side2.value);
     this.s3 =  parseFloat(globalThis.side3.value);
 
-
-    console.log(this.s1, this.s2, this.s3);
-    if (
+    
+ if(globalThis.side1.value == ""||globalThis.side2.value==""||globalThis.side3.value ==""){
+        alert ("please enter number")
+ }
+  else  if (
       this.s1 + this.s2 <= this.s3 ||
       this.s2 + this.s3 <= this.s1 ||
       this.s1 + this.s3 <= this.s2 ||
@@ -40,5 +46,39 @@ export class MainComponent implements OnInit {
       
     }
    
+   
   }
+  
+    
+  openPopup() {
+    this.displayStyle = "block";
+   
+     }
+  closePopup() {
+    this.displayStyle = "none";
+  }
+   
+   
+ 
+  
+//var AB = 40;
+// var BC = 50;
+// var AC = 30;
+
+
+
+// // calculate third point
+// C[1] = (AB * AB + AC * AC - BC * BC) / (2 * AB);
+// C[0] = Math.sqrt(AC * AC - C[1] * C[1]);
+// console.log(A, B, C);
+
+// var canvas = document.getElementById('canvas');
+// var ctx = canvas.getContext('2d');
+
+// ctx.beginPath();
+// ctx.moveTo(A[0], A[1]);
+// ctx.lineTo(B[0], B[1]);
+// ctx.lineTo(C[0], C[1]);
+// ctx.fill();
+
 }

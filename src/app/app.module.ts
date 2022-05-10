@@ -16,11 +16,11 @@ import { AboutComponent } from './components/about/about.component';
     ButtonComponent,
     MainComponent,
     TriangleComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
