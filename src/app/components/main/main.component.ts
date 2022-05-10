@@ -19,15 +19,17 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {}
   DoMath() {
+    //getting the user input
     this.s1 = parseFloat(globalThis.side1.value);
     this.s2 = parseFloat(globalThis.side2.value);
     this.s3 =  parseFloat(globalThis.side3.value);
 
     
  if(globalThis.side1.value == ""||globalThis.side2.value==""||globalThis.side3.value ==""){
-        alert ("please enter number")
+        alert ("Please enter number")
  }
   else  if (
+    //for triangle types
       this.s1 + this.s2 <= this.s3 ||
       this.s2 + this.s3 <= this.s1 ||
       this.s1 + this.s3 <= this.s2 ||
@@ -50,13 +52,7 @@ export class MainComponent implements OnInit {
   }
   
     
-  openPopup() {
-    this.displayStyle = "block";
-   
-     }
-  closePopup() {
-    this.displayStyle = "none";
-  }
+  
    
    
  
